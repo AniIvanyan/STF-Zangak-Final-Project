@@ -2,6 +2,7 @@ package aua.stf.pom.pages;
 
 import aua.stf.pom.base.BasePage;
 import aua.stf.pom.locators.BasketBookLocators;
+import aua.stf.pom.locators.SearchLocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,7 +15,8 @@ public class BasketBookPage extends BasePage {
     }
 
     public void clickBasketButton() {
-        driver.findElement(BasketBookLocators.BASKET_ICON).click();
+        WebElement basketButton = webDriverWait.until(ExpectedConditions.elementToBeClickable(BasketBookLocators.BASKET_ICON));
+        basketButton.click();
     }
 
     public String getItemTitle() {

@@ -2,11 +2,13 @@ package base;
 
 import aua.stf.pom.base.BasePage;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.OutputType;
@@ -26,20 +28,19 @@ public abstract class BaseTest {
     protected static WebDriver driver;
     protected static WebDriverWait webDriverWait;
 
-    @BeforeSuite
+    @BeforeMethod
     public void setupSuite() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", "chrome");
-
         URL hubUrl = new URL("http://localhost:4444/wd/hub");
-
         driver = new RemoteWebDriver(hubUrl, capabilities);
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
         driver.navigate().to(BasePage.BASE_URL);
     }
 
-    @AfterSuite
+    @AfterMethod
     public void teardownSuite() {
         if (driver != null) {
             driver.quit();

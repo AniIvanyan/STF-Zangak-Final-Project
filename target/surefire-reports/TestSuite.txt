@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 122.016 s <<< FAILURE! - in TestSuite
+SearchTest.testValidInput  Time elapsed: 1.504 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="submit" class="btn btn-search">...</button> is not clickable at point (1123, 65). Other element would receive the click: <div class="page-loader">...</div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2b5ee0c1ea9ff9b1cc234f43cd72921, clickElement {id=f.35BE48496298EE0A101BEE99C9341358.d.F3063C5110E060C71DE8F0843625CBF4.e.16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51333/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2b5ee0c1ea9ff9b1cc234f43cd72921)] -> css selector: button.btn.btn-search]
+Session ID: c2b5ee0c1ea9ff9b1cc234f43cd72921
+	at SearchTest.testValidInput(SearchTest.java:40)
+

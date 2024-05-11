@@ -4,6 +4,7 @@ import aua.stf.pom.base.BasePage;
 import aua.stf.pom.locators.SearchLocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -20,7 +21,8 @@ public class SearchPage extends BasePage {
     }
 
     public void clickSearchButton() {
-        driver.findElement(SearchLocators.SEARCH_BUTTON).click();
+        WebElement searchButton = webDriverWait.until(ExpectedConditions.elementToBeClickable(SearchLocators.SEARCH_BUTTON));
+        searchButton.click();
     }
 
     public void performSearch(String searchText) {

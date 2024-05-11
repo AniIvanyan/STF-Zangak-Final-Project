@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-11T06:39:19 AMT" name="Ordered Test Suite" finished-at="2024-05-11T06:41:20 AMT" duration-ms="121259">
+    <groups>
+    </groups>
+    <test started-at="2024-05-11T06:39:19 AMT" name="Search Test" finished-at="2024-05-11T06:39:51 AMT" duration-ms="32164">
+      <class name="SearchTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:19 AMT" name="setupSuite" finished-at="2024-05-11T06:39:23 AMT" duration-ms="4449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="methodSetup()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:23 AMT" name="methodSetup" finished-at="2024-05-11T06:39:23 AMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method signature="testEmptySearchField()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:23 AMT" name="testEmptySearchField" finished-at="2024-05-11T06:39:25 AMT" duration-ms="1453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptySearchField -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:25 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:39:25 AMT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptySearchField status=SUCCESS method=SearchTest.testEmptySearchField()[pri:0, instance:SearchTest@6f96c77] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:25 AMT" name="teardownSuite" finished-at="2024-05-11T06:39:26 AMT" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:26 AMT" name="setupSuite" finished-at="2024-05-11T06:39:30 AMT" duration-ms="4247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="methodSetup()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:30 AMT" name="methodSetup" finished-at="2024-05-11T06:39:30 AMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method signature="testInvalidInput()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:30 AMT" name="testInvalidInput" finished-at="2024-05-11T06:39:40 AMT" duration-ms="9863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidInput -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:40 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:39:40 AMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidInput status=SUCCESS method=SearchTest.testInvalidInput()[pri:0, instance:SearchTest@6f96c77] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:40 AMT" name="teardownSuite" finished-at="2024-05-11T06:39:41 AMT" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:41 AMT" name="setupSuite" finished-at="2024-05-11T06:39:48 AMT" duration-ms="7669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method signature="testValidInput()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:48 AMT" name="testValidInput" finished-at="2024-05-11T06:39:50 AMT" duration-ms="1493" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="btn btn-search">...</button> is not clickable at point (1123, 65). Other element would receive the click: <div class="page-loader">...</div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2b5ee0c1ea9ff9b1cc234f43cd72921, clickElement {id=f.35BE48496298EE0A101BEE99C9341358.d.F3063C5110E060C71DE8F0843625CBF4.e.16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51333/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2b5ee0c1ea9ff9b1cc234f43cd72921)] -> css selector: button.btn.btn-search]
+Session ID: c2b5ee0c1ea9ff9b1cc234f43cd72921]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn btn-search">...</button> is not clickable at point (1123, 65). Other element would receive the click: <div class="page-loader">...</div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2b5ee0c1ea9ff9b1cc234f43cd72921, clickElement {id=f.35BE48496298EE0A101BEE99C9341358.d.F3063C5110E060C71DE8F0843625CBF4.e.16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51333/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2b5ee0c1ea9ff9b1cc234f43cd72921)] -> css selector: button.btn.btn-search]
+Session ID: c2b5ee0c1ea9ff9b1cc234f43cd72921
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at aua.stf.pom.pages.SearchPage.clickSearchButton(SearchPage.java:25)
+at aua.stf.pom.pages.SearchPage.performSearch(SearchPage.java:30)
+at SearchTest.testValidInput(SearchTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidInput -->
+        <test-method is-config="true" signature="methodSetup()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:48 AMT" name="methodSetup" finished-at="2024-05-11T06:39:48 AMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:50 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:39:50 AMT" duration-ms="616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidInput status=FAILURE method=SearchTest.testValidInput()[pri:0, instance:SearchTest@6f96c77] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:SearchTest@6f96c77]" started-at="2024-05-11T06:39:50 AMT" name="teardownSuite" finished-at="2024-05-11T06:39:51 AMT" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+      </class> <!-- SearchTest -->
+    </test> <!-- Search Test -->
+    <test started-at="2024-05-11T06:39:51 AMT" name="Sort Test" finished-at="2024-05-11T06:40:26 AMT" duration-ms="34554">
+      <class name="SortTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:39:51 AMT" name="setupSuite" finished-at="2024-05-11T06:39:55 AMT" duration-ms="4137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupSortPage()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:39:55 AMT" name="setupSortPage" finished-at="2024-05-11T06:40:06 AMT" duration-ms="10991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSortPage -->
+        <test-method signature="testSortByPriceHighToLow()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:06 AMT" name="testSortByPriceHighToLow" finished-at="2024-05-11T06:40:10 AMT" duration-ms="3754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortByPriceHighToLow -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:10 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:40:10 AMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSortByPriceHighToLow status=SUCCESS method=SortTest.testSortByPriceHighToLow()[pri:0, instance:SortTest@384ad17b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:10 AMT" name="teardownSuite" finished-at="2024-05-11T06:40:12 AMT" duration-ms="1798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:12 AMT" name="setupSuite" finished-at="2024-05-11T06:40:16 AMT" duration-ms="3813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupSortPage()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:16 AMT" name="setupSortPage" finished-at="2024-05-11T06:40:21 AMT" duration-ms="5713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSortPage -->
+        <test-method signature="testSortByPriceLowToHigh()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:21 AMT" name="testSortByPriceLowToHigh" finished-at="2024-05-11T06:40:25 AMT" duration-ms="3575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortByPriceLowToHigh -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:25 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:40:25 AMT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSortByPriceLowToHigh status=SUCCESS method=SortTest.testSortByPriceLowToHigh()[pri:0, instance:SortTest@384ad17b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:SortTest@384ad17b]" started-at="2024-05-11T06:40:25 AMT" name="teardownSuite" finished-at="2024-05-11T06:40:26 AMT" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+      </class> <!-- SortTest -->
+    </test> <!-- Sort Test -->
+    <test started-at="2024-05-11T06:40:26 AMT" name="Add Basket Test" finished-at="2024-05-11T06:40:48 AMT" duration-ms="22007">
+      <class name="AddBasketTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:AddBasketTest@4d9e68d0]" started-at="2024-05-11T06:40:26 AMT" name="setupSuite" finished-at="2024-05-11T06:40:30 AMT" duration-ms="4222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:AddBasketTest@4d9e68d0]" started-at="2024-05-11T06:40:30 AMT" name="setupPages" finished-at="2024-05-11T06:40:30 AMT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="testAddBookToBasket()[pri:0, instance:AddBasketTest@4d9e68d0]" started-at="2024-05-11T06:40:30 AMT" name="testAddBookToBasket" finished-at="2024-05-11T06:40:47 AMT" duration-ms="17010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddBookToBasket -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:AddBasketTest@4d9e68d0]" started-at="2024-05-11T06:40:47 AMT" name="teardownSuite" finished-at="2024-05-11T06:40:48 AMT" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AddBasketTest@4d9e68d0]" started-at="2024-05-11T06:40:47 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:40:47 AMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddBookToBasket status=SUCCESS method=AddBasketTest.testAddBookToBasket()[pri:0, instance:AddBasketTest@4d9e68d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+      </class> <!-- AddBasketTest -->
+    </test> <!-- Add Basket Test -->
+    <test started-at="2024-05-11T06:40:48 AMT" name="Quantity Change Test" finished-at="2024-05-11T06:41:20 AMT" duration-ms="32383">
+      <class name="QuantityChangeTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:40:48 AMT" name="setupSuite" finished-at="2024-05-11T06:40:51 AMT" duration-ms="3312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:40:51 AMT" name="setUp" finished-at="2024-05-11T06:41:00 AMT" duration-ms="8767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDecreaseItemQuantity()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:00 AMT" name="testDecreaseItemQuantity" finished-at="2024-05-11T06:41:05 AMT" duration-ms="5139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDecreaseItemQuantity -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:05 AMT" name="teardownSuite" finished-at="2024-05-11T06:41:06 AMT" duration-ms="770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:05 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:41:05 AMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDecreaseItemQuantity status=SUCCESS method=QuantityChangeTest.testDecreaseItemQuantity()[pri:0, instance:QuantityChangeTest@44ebcd03] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:06 AMT" name="setupSuite" finished-at="2024-05-11T06:41:10 AMT" duration-ms="3829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:10 AMT" name="setUp" finished-at="2024-05-11T06:41:19 AMT" duration-ms="9023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testIncreaseItemQuantity()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:19 AMT" name="testIncreaseItemQuantity" finished-at="2024-05-11T06:41:19 AMT" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIncreaseItemQuantity -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:19 AMT" name="teardownSuite" finished-at="2024-05-11T06:41:20 AMT" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:QuantityChangeTest@44ebcd03]" started-at="2024-05-11T06:41:19 AMT" name="takeScreenshotOnFailure" finished-at="2024-05-11T06:41:19 AMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testIncreaseItemQuantity status=SUCCESS method=QuantityChangeTest.testIncreaseItemQuantity()[pri:0, instance:QuantityChangeTest@44ebcd03] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+      </class> <!-- QuantityChangeTest -->
+    </test> <!-- Quantity Change Test -->
+  </suite> <!-- Ordered Test Suite -->
+</testng-results>

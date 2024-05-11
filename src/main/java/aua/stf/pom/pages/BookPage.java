@@ -35,8 +35,7 @@ public class BookPage extends BasePage {
             webDriverWait.until(ExpectedConditions.elementToBeClickable(addToBasketButton));
 
             addToBasketButton.click();
-
-            System.out.println("Button clicked successfully.");
+            ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
         } catch (Exception e) {
             System.out.println("Failed to click on the button: " + e.getMessage());
             throw e;
