@@ -1,6 +1,7 @@
 import aua.stf.pom.locators.BasketBookLocators;
 import aua.stf.pom.locators.BookLocators;
 import aua.stf.pom.locators.SearchLocators;
+import aua.stf.pom.pages.SortPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -27,10 +28,12 @@ public class QuantityChangeTest extends BaseTest {
         SearchPage searchPage = new SearchPage(driver, webDriverWait);
         BookPage bookPage = new BookPage(driver, webDriverWait);
         basketBookPage = new BasketBookPage(driver, webDriverWait);
+        SortPage sortPage = new SortPage(driver, webDriverWait);
 
         // Prepare the test by performing actions leading up to the main test
         webDriverWait.until(ExpectedConditions.elementToBeClickable(SearchLocators.SEARCH_BUTTON));
         searchPage.performSearch(SEARCH_TERM);
+        sortPage.sortByPriceHighToLow();
         webDriverWait.until(ExpectedConditions.elementToBeClickable(BookLocators.ADD_TO_BASKET_BUTTON));
         bookPage.clickAddToBasket();
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(BasketBookLocators.CONFIRM_BOX));

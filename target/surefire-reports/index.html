@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Ordered_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Ordered Test Suite</span>
+              <span class="suite-name border-passed">Ordered Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Ordered_Test_Suite" class="hide-methods failed suite-Ordered_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Ordered_Test_Suite -->
-                      <a href="#" panel-name="suite-Ordered_Test_Suite" class="show-methods failed suite-Ordered_Test_Suite"> (show)</a> <!-- show-methods failed suite-Ordered_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Ordered_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Ordered_Test_Suite" title="SearchTest" class="method navigator-link" hash-for-method="testValidInput">testValidInput</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Ordered_Test_Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -150,6 +136,11 @@
                         <a href="#" panel-name="suite-Ordered_Test_Suite" title="SortTest" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ordered_Test_Suite" title="SearchTest" class="method navigator-link" hash-for-method="testValidInput">testValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Ordered_Test_Suite -->
                   </li>
                 </ul>
@@ -162,63 +153,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Ordered_Test_Suite" class="panel Ordered_Test_Suite">
-          <div class="suite-Ordered_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">SearchTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidInput">
-                  </a> <!-- testValidInput -->
-                  <span class="method-name">testValidInput</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-search&quot;&gt;...&lt;/button&gt; is not clickable at point (1123, 65). Other element would receive the click: &lt;div class=&quot;page-loader&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=124.0.6367.201)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c2b5ee0c1ea9ff9b1cc234f43cd72921, clickElement {id=f.35BE48496298EE0A101BEE99C9341358.d.F3063C5110E060C71DE8F0843625CBF4.e.16}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51333/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (c2b5ee0c1ea9ff9b1cc234f43cd72921)] -&gt; css selector: button.btn.btn-search]
-Session ID: c2b5ee0c1ea9ff9b1cc234f43cd72921
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at aua.stf.pom.pages.SearchPage.clickSearchButton(SearchPage.java:25)
-	at aua.stf.pom.pages.SearchPage.performSearch(SearchPage.java:30)
-	at SearchTest.testValidInput(SearchTest.java:40)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Ordered_Test_Suite-class-failed -->
           <div class="suite-Ordered_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">SortTest</span>
+              <span class="class-name">AddBasketTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSortByPriceHighToLow">
-                  </a> <!-- testSortByPriceHighToLow -->
-                  <span class="method-name">testSortByPriceHighToLow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByPriceLowToHigh">
-                  </a> <!-- testSortByPriceLowToHigh -->
-                  <span class="method-name">testSortByPriceLowToHigh</span>
+                  <a name="testAddBookToBasket">
+                  </a> <!-- testAddBookToBasket -->
+                  <span class="method-name">testAddBookToBasket</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,6 +193,28 @@ Session ID: c2b5ee0c1ea9ff9b1cc234f43cd72921
           <div class="suite-Ordered_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">SortTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByPriceHighToLow">
+                  </a> <!-- testSortByPriceHighToLow -->
+                  <span class="method-name">testSortByPriceHighToLow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByPriceLowToHigh">
+                  </a> <!-- testSortByPriceLowToHigh -->
+                  <span class="method-name">testSortByPriceLowToHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ordered_Test_Suite-class-passed -->
+          <div class="suite-Ordered_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">SearchTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -265,19 +232,11 @@ Session ID: c2b5ee0c1ea9ff9b1cc234f43cd72921
                   <span class="method-name">testInvalidInput</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Ordered_Test_Suite-class-passed -->
-          <div class="suite-Ordered_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">AddBasketTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAddBookToBasket">
-                  </a> <!-- testAddBookToBasket -->
-                  <span class="method-name">testAddBookToBasket</span>
+                  <a name="testValidInput">
+                  </a> <!-- testValidInput -->
+                  <span class="method-name">testValidInput</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -362,40 +321,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testAddBookToBasket')
 data.setCell(0, 2, 'AddBasketTest')
-data.setCell(0, 3, 17010);
+data.setCell(0, 3, 13884);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testInvalidInput')
 data.setCell(1, 2, 'SearchTest')
-data.setCell(1, 3, 9863);
+data.setCell(1, 3, 10000);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testDecreaseItemQuantity')
-data.setCell(2, 2, 'QuantityChangeTest')
-data.setCell(2, 3, 5139);
+data.setCell(2, 1, 'testValidInput')
+data.setCell(2, 2, 'SearchTest')
+data.setCell(2, 3, 8698);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSortByPriceHighToLow')
+data.setCell(3, 1, 'testSortByPriceLowToHigh')
 data.setCell(3, 2, 'SortTest')
-data.setCell(3, 3, 3754);
+data.setCell(3, 3, 5828);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSortByPriceLowToHigh')
-data.setCell(4, 2, 'SortTest')
-data.setCell(4, 3, 3575);
+data.setCell(4, 1, 'testDecreaseItemQuantity')
+data.setCell(4, 2, 'QuantityChangeTest')
+data.setCell(4, 3, 5430);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testValidInput')
-data.setCell(5, 2, 'SearchTest')
-data.setCell(5, 3, 1493);
+data.setCell(5, 1, 'testSortByPriceHighToLow')
+data.setCell(5, 2, 'SortTest')
+data.setCell(5, 3, 4794);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testEmptySearchField')
 data.setCell(6, 2, 'SearchTest')
-data.setCell(6, 3, 1453);
+data.setCell(6, 3, 2089);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testIncreaseItemQuantity')
 data.setCell(7, 2, 'QuantityChangeTest')
-data.setCell(7, 3, 758);
+data.setCell(7, 3, 959);
 window.suiteTableData['Ordered_Test_Suite']= { tableData: data, tableDiv: 'times-div-Ordered_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Ordered_Test_Suite">
               </div> <!-- times-div-Ordered_Test_Suite -->
             </div> <!-- times-div -->
@@ -428,170 +387,168 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">methodSetup</span>
-                <span class="method-start">4451 ms</span>
+                <span class="method-start">4645 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testEmptySearchField</span>
-                <span class="method-start">4454 ms</span>
+                <span class="method-start">4651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testEmptySearchField status=SUCCESS method=SearchTest.testEmptySearchField()[pri:0,...)</span>
-                <span class="method-start">5911 ms</span>
+                <span class="method-start">6742 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">teardownSuite</span>
-                <span class="method-start">5918 ms</span>
+                <span class="method-start">6745 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">6663 ms</span>
+                <span class="method-start">6971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">methodSetup</span>
-                <span class="method-start">10910 ms</span>
+                <span class="method-start">11362 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInvalidInput</span>
-                <span class="method-start">10911 ms</span>
+                <span class="method-start">11364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testInvalidInput status=SUCCESS method=SearchTest.testInvalidInput()[pri:0, instanc...)</span>
-                <span class="method-start">20776 ms</span>
+                <span class="method-start">21366 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">teardownSuite</span>
-                <span class="method-start">20777 ms</span>
+                <span class="method-start">21367 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">21591 ms</span>
+                <span class="method-start">21522 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">methodSetup</span>
-                <span class="method-start">29260 ms</span>
+                <span class="method-start">23901 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testValidInput</span>
-                <span class="method-start">29260 ms</span>
+                <span class="method-start">23904 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailure([TestResult name=testValidInput status=FAILURE method=SearchTest.testValidInput()[pri:0, instance:Se...)</span>
-                <span class="method-start">30761 ms</span>
+                <span class="method-name">takeScreenshotOnFailure([TestResult name=testValidInput status=SUCCESS method=SearchTest.testValidInput()[pri:0, instance:Se...)</span>
+                <span class="method-start">32603 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">teardownSuite</span>
-                <span class="method-start">31377 ms</span>
+                <span class="method-start">32604 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">SortTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">32244 ms</span>
+                <span class="method-start">32819 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupSortPage</span>
-                <span class="method-start">36381 ms</span>
+                <span class="method-start">36015 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSortByPriceHighToLow</span>
-                <span class="method-start">47372 ms</span>
+                <span class="method-start">44328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testSortByPriceHighToLow status=SUCCESS method=SortTest.testSortByPriceHighToLow()[...)</span>
-                <span class="method-start">51127 ms</span>
+                <span class="method-start">49123 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">teardownSuite</span>
-                <span class="method-start">51127 ms</span>
+                <span class="method-start">49124 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">52926 ms</span>
+                <span class="method-start">49222 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupSortPage</span>
-                <span class="method-start">56740 ms</span>
+                <span class="method-start">54018 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSortByPriceLowToHigh</span>
-                <span class="method-start">62453 ms</span>
+                <span class="method-start">62977 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailure([TestResult name=testSortByPriceLowToHigh status=SUCCESS method=SortTest.testSortByPriceLowToHigh()[...)</span>
-                <span class="method-start">66028 ms</span>
+                <span class="method-start">68806 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">teardownSuite</span>
-                <span class="method-start">66029 ms</span>
+                <span class="method-start">68807 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">AddBasketTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">66819 ms</span>
+                <span class="method-start">68986 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setupPages</span>
-                <span class="method-start">71041 ms</span>
+                <span class="method-start">71375 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddBookToBasket</span>
-                <span class="method-start">71046 ms</span>
+                <span class="method-start">71380 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardownSuite</span>
-                <span class="method-start">88057 ms</span>
+                <span class="method-name">takeScreenshotOnFailure([TestResult name=testAddBookToBasket status=SUCCESS method=AddBasketTest.testAddBookToBasket()[pri:0...)</span>
+                <span class="method-start">85266 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailure([TestResult name=testAddBookToBasket status=SUCCESS method=AddBasketTest.testAddBookToBasket()[pri:0...)</span>
-                <span class="method-start">88057 ms</span>
+                <span class="method-name">teardownSuite</span>
+                <span class="method-start">85266 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">QuantityChangeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">88844 ms</span>
+                <span class="method-start">85442 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">92157 ms</span>
+                <span class="method-start">88086 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDecreaseItemQuantity</span>
-                <span class="method-start">100925 ms</span>
+                <span class="method-start">102040 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardownSuite</span>
-                <span class="method-start">106065 ms</span>
+                <span class="method-name">takeScreenshotOnFailure([TestResult name=testDecreaseItemQuantity status=SUCCESS method=QuantityChangeTest.testDecreaseItemQ...)</span>
+                <span class="method-start">107471 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailure([TestResult name=testDecreaseItemQuantity status=SUCCESS method=QuantityChangeTest.testDecreaseItemQ...)</span>
-                <span class="method-start">106065 ms</span>
+                <span class="method-name">teardownSuite</span>
+                <span class="method-start">107471 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupSuite</span>
-                <span class="method-start">106837 ms</span>
+                <span class="method-start">107617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">110666 ms</span>
+                <span class="method-start">109847 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testIncreaseItemQuantity</span>
-                <span class="method-start">119689 ms</span>
+                <span class="method-start">122739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardownSuite</span>
-                <span class="method-start">120448 ms</span>
+                <span class="method-name">takeScreenshotOnFailure([TestResult name=testIncreaseItemQuantity status=SUCCESS method=QuantityChangeTest.testIncreaseItemQ...)</span>
+                <span class="method-start">123698 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailure([TestResult name=testIncreaseItemQuantity status=SUCCESS method=QuantityChangeTest.testIncreaseItemQ...)</span>
-                <span class="method-start">120448 ms</span>
+                <span class="method-name">teardownSuite</span>
+                <span class="method-start">123699 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

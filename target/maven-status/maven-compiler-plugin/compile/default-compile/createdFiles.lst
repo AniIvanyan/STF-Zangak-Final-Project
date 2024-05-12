@@ -1,9 +1,9 @@
 aua\stf\pom\pages\BookPage.class
 aua\stf\pom\base\BasePage.class
-aua\stf\pom\pages\SortPage.class
-aua\stf\pom\locators\SortLocators.class
-aua\stf\pom\locators\SearchLocators.class
 aua\stf\pom\locators\BookLocators.class
 aua\stf\pom\locators\BasketBookLocators.class
+aua\stf\pom\pages\SortPage.class
+aua\stf\pom\locators\SortLocators.class
 aua\stf\pom\pages\BasketBookPage.class
 aua\stf\pom\pages\SearchPage.class
+aua\stf\pom\locators\SearchLocators.class

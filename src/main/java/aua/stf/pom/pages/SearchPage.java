@@ -15,7 +15,7 @@ public class SearchPage extends BasePage {
     }
 
     public void enterSearchText(String searchText) {
-        WebElement searchField = driver.findElement(SearchLocators.SEARCH_INPUT_FIELD);
+        WebElement searchField = webDriverWait.until(ExpectedConditions.elementToBeClickable(SearchLocators.SEARCH_INPUT_FIELD));
         searchField.clear();
         searchField.sendKeys(searchText);
     }

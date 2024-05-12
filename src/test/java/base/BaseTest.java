@@ -34,7 +34,6 @@ public abstract class BaseTest {
         capabilities.setCapability("browserName", "chrome");
         URL hubUrl = new URL("http://localhost:4444/wd/hub");
         driver = new RemoteWebDriver(hubUrl, capabilities);
-        driver = new ChromeDriver();
         driver.manage().window().maximize();
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
         driver.navigate().to(BasePage.BASE_URL);

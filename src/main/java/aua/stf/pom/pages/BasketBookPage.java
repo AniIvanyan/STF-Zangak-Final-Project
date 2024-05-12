@@ -2,7 +2,6 @@ package aua.stf.pom.pages;
 
 import aua.stf.pom.base.BasePage;
 import aua.stf.pom.locators.BasketBookLocators;
-import aua.stf.pom.locators.SearchLocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;

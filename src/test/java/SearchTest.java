@@ -1,5 +1,7 @@
+import aua.stf.pom.locators.SearchLocators;
 import aua.stf.pom.pages.SearchPage;
 import base.BaseTest;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,6 +23,7 @@ public class SearchTest extends BaseTest {
         // Test to ensure the URL remains unchanged when the search field is submitted empty.
         String oldURL = driver.getCurrentUrl();
         searchPage.enterSearchText("");
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(SearchLocators.SEARCH_BUTTON));
         searchPage.clickSearchButton();
         String newURL = driver.getCurrentUrl();
         Assert.assertEquals(newURL, oldURL, EMPTY_MESSAGE);
@@ -30,6 +33,7 @@ public class SearchTest extends BaseTest {
     public void testInvalidInput() {
         // Test to verify the handling of invalid inputs in the search field.
         // Expecting an error message to be displayed.
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(SearchLocators.SEARCH_BUTTON));
         searchPage.performSearch(INVALID_INPUT);
         Assert.assertNotNull(searchPage.getErrorMessage(), ERROR_MESSAGE);
     }
@@ -37,6 +41,7 @@ public class SearchTest extends BaseTest {
     @Test
     public void testValidInput() {
         // Test to verify that valid search terms return search results.
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(SearchLocators.SEARCH_BUTTON));
         searchPage.performSearch(VALID_INPUT);
         Assert.assertTrue(searchPage.areSearchResultsPresent());
     }
